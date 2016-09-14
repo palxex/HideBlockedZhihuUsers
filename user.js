@@ -74,8 +74,7 @@ $(function () {
             {
               if ($commentlist.eq(i).attr('href').indexOf(userlist[j]) != - 1)
               {
-                $commentlist.eq(i).parents('.zm-item-comment').children().hide();
-                $commentlist.eq(i).parents('.zm-item-comment').text('此处内容已隐藏');
+                $commentlist.eq(i).parents('.zm-item-comment').hide();
               }
             }
           }
@@ -93,8 +92,7 @@ $(function () {
         {
           if ($answerlist.eq(i).attr('href').indexOf(userlist[j]) != - 1)
           {
-            $answerlist.eq(i).parents('.zm-item-answer').children().hide();
-            $answerlist.eq(i).parents('.zm-item-answer').text('此处内容已隐藏');
+            $answerlist.eq(i).parents('.zm-item-answer').hide();
           }
         }
       }
@@ -110,8 +108,7 @@ $(function () {
         {
           if ($timeline.eq(i).attr('href').indexOf(userlist[j]) != - 1)
           {
-            $timeline.eq(i).parents('.feed-item').children().hide();
-            $timeline.eq(i).parents('.feed-item').text('此处内容已隐藏');
+            $timeline.eq(i).parents('.feed-item').hide();
           }
         }
       }
