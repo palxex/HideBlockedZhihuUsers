@@ -51,8 +51,7 @@ $(function () {
             {
               if ($commentlist.eq(i).attr('href').indexOf(userlist[j]) != - 1)
               {
-                $commentlist.eq(i).parents('.zm-item-comment').children().hide();
-                $commentlist.eq(i).parents('.zm-item-comment').text('此处内容已隐藏');
+                $commentlist.eq(i).parents('.zm-item-comment').hide();
               }
             }
           }
