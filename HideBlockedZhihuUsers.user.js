@@ -2,7 +2,7 @@
 // fork from https://greasyfork.org/zh-CN/scripts/10807-知乎-隐藏你屏蔽的人
 // @name        知乎·隐藏你屏蔽的人补完
 // @namespace   ZhihuHideBlockedUserExtended
-// @description 屏蔽用户，主站改为https，彻底掩埋痕迹
+// @description 彻底屏蔽被你隐藏的人的任何踪迹
 // @include     http://www.zhihu.com/
 // @include     http://www.zhihu.com/*
 // @include     https://www.zhihu.com/
@@ -12,7 +12,6 @@
 // @grant       none
 // ==/UserScript==
 var sitePrefix = "https://www.zhihu.com/";
-var peoplePrefix = (sitePrefix + "people/").replace(/.*?:\/\//g, "");
 var userlist = {}
 localStorage.UserList.split(',').forEach(function (e) {
     userlist[e] = true;
@@ -28,7 +27,6 @@ function BlockPeople()
   localStorage.UserList = username;
 }
 $(function () {
-  console.log("HideBlockedZhihu UserJS Works");
   if (window.location.href == 'https://www.zhihu.com/settings/filter')
   {
     BlockPeople();
