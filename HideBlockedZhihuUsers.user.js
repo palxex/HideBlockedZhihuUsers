@@ -8,7 +8,7 @@
 // @include     https://www.zhihu.com/
 // @include     https://www.zhihu.com/*
 // @version     2
-// @require     https://gist.github.com/raw/2625891/waitForKeyElements.js
+// @require     https://greasyfork.org/scripts/23268-waitforkeyelements/code/waitForKeyElements.js?version=147835
 // @grant       none
 // ==/UserScript==
 var sitePrefix = "https://www.zhihu.com/";
